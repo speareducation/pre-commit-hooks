@@ -1,0 +1,6 @@
+- id: swiftlint
+  name: Swift Lint
+  description: Run swift lint validation on code.
+  entry: pre_commit_hooks/swiftlint.sh
+  language: script
+  files: \.(swift)$
