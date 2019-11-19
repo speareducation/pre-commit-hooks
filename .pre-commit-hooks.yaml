@@ -4,3 +4,9 @@
   entry: pre_commit_hooks/swiftlint.sh
   language: script
   files: \.(swift)$
+- id: podfile-local-path
+  name: Local Path in Podfile
+  description: Verify there are no local paths in the Podfile and Podfile.lock.
+  entry: pre_commit_hooks/podfile-local-path.sh
+  language: script
+  files: Podfile.*
